@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/imhardikdesai/news-website/main/img/favicon.png" sizes="32x32">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"> 
+  <title>news webiste</title>
+</head>
+<body>
+  <nav id="navbar">
+   <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">news webiste</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+     aria-expanded="false" aria-label="Toggle navigation" >
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapase navbar-collpase" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     <li class="nav-item">
+       <a class="nav-link active" aria-current="page" onclick="getNews('all')">home</a></li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">category</a>
+         <ul id="webList" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li onclick="sendCategory(this.id)" id="0" ><a class="dropdown-item" href="#" >national</a></li>
+            <li onclick="sendCategory(this.id)" id="1" ><a class="dropdown-item" href="#" >business</a></li>
+            <li onclick="sendCategory(this.id)" id="2" ><a class="dropdown-item" href="#" >sport</a></li>
+            <li onclick="sendCategory(this.id)" id="3" ><a class="dropdown-item" href="#" >world</a></li>
+            <li onclick="sendCategory(this.id)" id="4" ><a class="dropdown-item" href="#" >politics</a></li>
+            <li onclick="sendCategory(this.id)" id="5" ><a class="dropdown-item" href="#" >technology</a></li>
+            <li onclick="sendCategory(this.id)" id="6" ><a class="dropdown-item" href="#" >startup</a></li>
+            <li onclick="sendCategory(this.id)" id="7" ><a class="dropdown-item" href="#" >entertainment</a></li>
+            <li onclick="sendCategory(this.id)" id="8" ><a class="dropdown-item" href="#" >miscellaneous</a></li>
+            <li onclick="sendCategory(this.id)" id="9" ><a class="dropdown-item" href="#" >hatke</a></li>
+            <li onclick="sendCategory(this.id)" id="10" ><a class="dropdown-item" href="#" >science</a></li>
+            <li onclick="sendCategory(this.id)" id="11" ><a class="dropdown-item" href="#" >automobile</a></li>
+         </ul>
+       </li>
+     </li>
+    </ul>
+    </div>
+   </div>
+   </nav>
+  </nav>
+  <div class="head-container">
+  <h3>top news <span class="badge text-bg-secondary">by gonzalote99</h3>
+ <span class="line"></span>
+  </div>
+  <div id="newsBox" class="container"></div>
+  <div id="spinner" class="mySpin spinner-border text-warning"></div>
+  <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>copyright &copy;2002 &nbsp; gonzalote99</small> 
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+</body>
+</html>
